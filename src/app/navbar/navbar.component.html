@@ -1,0 +1,20 @@
+<app-settings-modal
+  (closeModal)="hideModal = !hideModal"
+  [hidden]="hideModal"
+></app-settings-modal>
+<nav
+  class="navbar navbar-expand-lg"
+  [ngStyle]="{ 'background-color': bkgColor }"
+>
+  <div class="container-fluid">
+    <div class="navbar-brand"><i class="bi-stopwatch"></i> Fact Practice</div>
+    <div class="nav justify-content-end">
+      <!-- <div (click)="hideModal = !hideModal" class="btn-container">
+        <i class="bi bi-gear"></i>Settings
+      </div>
+      <div class="btn-container">
+        <i class="bi bi-box-arrow-in-right"></i>Log In
+      </div> -->
+    </div>
+  </div>
+</nav>
